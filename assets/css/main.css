@@ -9,6 +9,7 @@
 .carrousel__container {
   background-color: lightsalmon;
   height: 500px;
+  /* overflow: hidden; */
   position: relative;
   width: 100%;
 }
@@ -67,7 +68,7 @@
   left: 0;
 }
 
-.carrousel__imageimg {
+.carrousel__image img {
   height: inherit;
   width: inherit;
 }
