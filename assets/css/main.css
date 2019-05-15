@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  /*font-family:"Montserrat",sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.carrousel__container {
+  background-color: lightsalmon;
+  height: 500px;
+  position: relative;
+  width: 100%;
+}
+
+.carrousel__arrow {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.5px solid #d8d8d8;
+  border-radius: 25px;
+  color: #d8d8d8;
+  cursor: pointer;
+  display: flex;
+  height: 1.8rem;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+  width: 1.8rem;
+  z-index: 2;
+}
+
+.carrousel__arrow:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.carrousel__arrow-left {
+  color: #fff;
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+}
+
+.carrousel__arrow-right {
+  color: #fff;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+}
+
+.carrousel__images {
+  width: 100%;
+}
+
+.carrousel__image {
+  position: absolute;
+  display: none;
+  height: 500px;
+  right: -500px;
+  top: 0;
+  transition: all 1.5s ease-in-out;
+  width: inherit;
+}
+
+.carrousel__image--active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carrousel__imageimg {
+  height: inherit;
+  width: inherit;
+}
+
+.carrousel__caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  /*border-bottom:1pxsolid#d8d8d8;
+border-top:1pxsolid#d8d8d8;*/
+  bottom: 2rem;
+  color: #fff;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  width: inherit;
+  z-index: 2;
+}
